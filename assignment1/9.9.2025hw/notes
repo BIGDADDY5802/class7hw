@@ -1,0 +1,50 @@
+# Blue Book 25 - 53, 69 - 80, Maarek section 5, Nana 0116_1 and 0117_12
+
+Cloud Computing - a new computing paradigm that involves delivering applications and services over the internet
+
+- Came into existence with the evolution of a variety of technologies such as virtualization and distributed computing
+
+Compute services in the cloud are dynamically scalable, capacity is provisioned virtually.
+
+    Features:
+        Scalable
+        Flexible
+        Secure
+        Cost effective
+
+Amazon ec2 is an IaaS feature offered by AWS, it is server provisioned virtually in the cloud, commonly referred to as instances. There are various instance types:
+        General Purpose
+        Compute Optimized
+        Memory Optimized
+        Accelerated Computing
+        Storage Optimized
+
+Pricing Options:
+        On-demand
+        Reserved
+        Spot
+
+Amazon Machine Image (AMI) - an instance template that contains the software configuration required to launch an instance.
+    AMIs come from:
+        AWS
+        AWS Communities and Marketplace
+        Communities not on AWS (Public)
+        AMIs also come from your existing instances
+
+Virtualization= A process that allows a computer to share its hardware resources with multiple digitally seperated environments, the technology that enables the creation of virtual environments from a single physical machine.
+
+Virtualization uses software called hypervisors to create multiple virtual computers (vms) on a single physical machine.
+Each virtual machine runs on its own OS and functions like a completely seperate machine, though the virtual machine can access all the parts of the physical machine.
+With this you get one machine running multiple tasks, instead of seperate machines running one task, it is sharing the hardware of one physical computer.
+
+Various forms of Virtualization:
+    Full Virtualization
+    Para Virtualization
+    Hardware Virtualization
+
+Hypervisor - The virtualization layer consists of hypervisor or VMM (Virtual Machine Monitor). This presents a virtual operating platform to guest OS.
+
+Hypervisor type 1: ![alt text](image.png)
+Hypervisor type 2: ![alt text](image-1.png)
+
+Guest OS - an operating system that is installed in a VM in addition to the Host or main OS.
