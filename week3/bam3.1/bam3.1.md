@@ -1,7 +1,7 @@
 # bam3.1 
 
 **Yes I know something is wrong.**
-![choco](/attachments/desktop.png)
+![choco](/week3/attachments/desktop.png)
 
 **I found out because everything was in my onedrive SMH.**
-![desktop](/attachments/choco_view.png)
+![desktop](/week3/attachments/choco_view.png)
