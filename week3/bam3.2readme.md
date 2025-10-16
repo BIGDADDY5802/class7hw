@@ -10,10 +10,10 @@ Bash Commands:
 
 '''
 ### This creates new branch called "feature/update-wk3"
-    git checkout -b feature/update-wk1
+git checkout -b feature/update-wk1
 '''
 
-![](week3/attachments/update-wk-3.png)
+![alt text](week3/attachments/update-wk-3.png)
 
 
 ### Step 2: Make your changes
@@ -26,13 +26,13 @@ Save work on branches history.
 
 Bash Commands:
 
-
+'''
 # Stage all new and modified files for commit
-    git add .
+git add .
 
 # Commit the staged files with a descriptive message
-    git commit -m "FEAT: Add content for bam3.2"
-
+git commit -m "FEAT: Add content for bam3.2"
+'''
 
 ### Step 4: Push to Github
 
@@ -40,10 +40,10 @@ Send new branch to github with commits already in remote repository, though not 
 
 Bash Commands:
 
-
+'''
 # Push the branch and set up remote tracking
     git push -u origin feature/update-wk3
-
+'''
 
 
 ### Step 5: Create Pull Request
