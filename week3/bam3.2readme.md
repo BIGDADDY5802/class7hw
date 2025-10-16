@@ -10,7 +10,7 @@ Bash Commands:
 
 '''
 ### This creates new branch called "feature/update-wk3"
-git checkout -b feature/update-wk1
+    git checkout -b feature/update-wk1
 '''
 
 ![](week3/attachments/update-wk-3.png)
@@ -27,10 +27,10 @@ Bash Commands:
 
 '''
 # Stage all new and modified files for commit
-git add .
+    git add .
 
 # Commit the staged files with a descriptive message
-git commit -m "FEAT: Add content for bam3.2"
+    git commit -m "FEAT: Add content for bam3.2"
 '''
 
 ### Step 4: Push to Github
