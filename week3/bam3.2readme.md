@@ -1,4 +1,4 @@
-## Merge Request Instructions (github)
+# Merge Request Instructions (github)
 
  Follow these steps for a successful merge request
 
@@ -9,7 +9,7 @@
 Bash Commands:
 
 
-# This creates new branch called "feature/update-wk3"
+### This creates new branch called "feature/update-wk3"
     git checkout -b feature/update-wk1
 
 
