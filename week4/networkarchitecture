@@ -23,10 +23,10 @@ Private-DB		        Private 1A	10.190.101.0/24
 
 In setting up a network for your VPC you should have a valid scheme that you understand and you can explain to someone. This is a best practice when working as a networker on a team.
 
-Link to doc:
+### Link to doc:
     <https://docs.google.com/spreadsheets/d/1B6pJckKSalFT-Q0wDYN0Uq0dSD7tyDOgK-CHbXxCcxs/edit?usp=sharing>
     
-    **Network Scheme**
+**Network Scheme**
 ![](/week4/attachments/networkscheme.png)
 
     As you grow in networking this scheme can grow without a problem!
@@ -37,7 +37,7 @@ Link to doc:
 
     Understanding binary is key in networking.
 
-    **High Score**
-    ![](/week4/attachments/highscore.png)
+**High Score**
+![](/week4/attachments/highscore.png)
 
     Practice makes perfect!!!
