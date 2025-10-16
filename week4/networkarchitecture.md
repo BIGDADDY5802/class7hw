@@ -26,7 +26,7 @@ In setting up a network for your VPC you should have a valid scheme that you und
 
 ---
 ### Link to doc:
-    <https://docs.google.com/spreadsheets/d/1B6pJckKSalFT-Q0wDYN0Uq0dSD7tyDOgK-CHbXxCcxs/edit?usp=sharing>
+    < https://docs.google.com/spreadsheets/d/1B6pJckKSalFT-Q0wDYN0Uq0dSD7tyDOgK-CHbXxCcxs/edit?usp=sharing >
     
 **Network Scheme**
 ![](/week4/attachments/networkscheme.png)
@@ -42,4 +42,4 @@ Understanding binary is key in networking.
 **High Score**
 ![](/week4/attachments/highscore.png)
 
-    Practice makes perfect!!!
+Practice makes perfect!!!
