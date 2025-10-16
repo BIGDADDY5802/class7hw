@@ -10,7 +10,7 @@ Bash Commands:
 
 '''
 ### This creates new branch called "feature/update-wk3"
-    git checkout -b feature/update-wk1
+    git checkout -b feature/update-wk3
 '''
 
 ![](week3/attachments/update-wk-3.png)
@@ -80,7 +80,7 @@ In present working directory switch back to 'main' branch. Be mindful that the m
 Bash Commands:
 
 
-# switch back to main branch
+# Switch back to main branch
     git checkout main
 
 
@@ -102,7 +102,7 @@ Remove the branch that you created, the feature branch is now part of the main b
 Bash Commands:
 
 
-# delete branch
+# Delete branch
     git branch -d feature/update-wk3
 
 
