@@ -8,7 +8,7 @@
 
 Bash Commands:
 
-'''
+
 # This creates new branch called "feature/update-wk3"
     git checkout -b feature/update-wk1
 '''
@@ -23,14 +23,12 @@ Save work on branches history.
 
 Bash Commands:
 
-'''
+
 # Stage all new and modified files for commit
     git add .
 
 # Commit the staged files with a descriptive message
     git commit -m "FEAT: Add content for bam3.2"
-'''
-
 
 
 ### Step 4: Push to Github
@@ -42,7 +40,7 @@ Bash Commands:
 '''
 # Push the branch and set up remote tracking
     git push -u origin feature/update-wk3
-'''
+
 
 
 ### Step 5: Create Pull Request
@@ -79,10 +77,10 @@ In present working directory switch back to 'main' branch. Be mindful that the m
 
 Bash Commands:
 
-'''
+
 # switch back to main branch
     git checkout main
-'''
+
 
 ### Step 2: Synchronize Local Branch (Main)
 
@@ -90,9 +88,9 @@ Update local 'main' branch to also include changes done on remote repo ('origin'
 
 Bash Commands:
 
-    '''
+    
     git pull origin main
-    '''
+    
 
 
 ### Step 3: Delete the Local Feature Branch
@@ -101,10 +99,10 @@ Remove the branch that you created, the feature branch is now part of the main b
 
 Bash Commands:
 
-'''
+
 # delete branch
     git branch -d feature/update-wk3
-'''
+
 
 Note:
  Use the `-d` (delete) flag for this operation. Git will prevent deletion if the branch contains unmerged changes, acting as a safety measure. Forcing a deletion requires the `-D` flag.
