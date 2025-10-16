@@ -1,4 +1,4 @@
-# network architechture
+# Network architechture
 
 VPC Network Architecture		Subnets	
 US-East-1	                10.190.0.0/16
@@ -25,8 +25,9 @@ In setting up a network for your VPC you should have a valid scheme that you und
 
 Link to doc:
     <https://docs.google.com/spreadsheets/d/1B6pJckKSalFT-Q0wDYN0Uq0dSD7tyDOgK-CHbXxCcxs/edit?usp=sharing>
+    
     **Network Scheme**
-    ![](/week4/attachments/networkscheme.png)
+![](/week4/attachments/networkscheme.png)
 
     As you grow in networking this scheme can grow without a problem!
 
