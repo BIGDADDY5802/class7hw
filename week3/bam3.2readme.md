@@ -29,7 +29,7 @@ Bash Commands:
 
 # Commit the staged files with a descriptive message
     git commit -m "FEAT: Add content for bam3.2"
-```
+
 
 
 
@@ -39,10 +39,10 @@ Send new branch to github with commits already in remote repository, though not 
 
 Bash Commands:
 
-```
+'''
 # Push the branch and set up remote tracking
     git push -u origin feature/update-wk3
-```
+
 
 
 Step 5: Create Pull Request
@@ -83,7 +83,7 @@ Bash Commands:
 ```
 # switch back to main branch
     git checkout main
-```
+
 
 Step 2: Synchronize Local Branch (Main)
 
