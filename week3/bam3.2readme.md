@@ -11,7 +11,7 @@ Bash Commands:
 
 # This creates new branch called "feature/update-wk3"
     git checkout -b feature/update-wk1
-'''
+
 
 ### Step 2: Make your changes
 
@@ -37,7 +37,7 @@ Send new branch to github with commits already in remote repository, though not 
 
 Bash Commands:
 
-'''
+
 # Push the branch and set up remote tracking
     git push -u origin feature/update-wk3
 
