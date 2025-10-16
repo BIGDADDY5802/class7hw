@@ -10,11 +10,9 @@ Bash Commands:
 
 '''
 # This creates new branch called "feature/update-wk3"
-
 git checkout -b feature/update-wk1
 ```
 
-![](attachments/update-wk-3.png)
 
 ### Step 2: Make your changes
 
@@ -34,7 +32,8 @@ git add .
 git commit -m "FEAT: Add content for bam3.2"
 ```
 
-![](attachments/update-wk-3.2.png)
+
+
 ### Step 4: Push to Github
 
 Send new branch to github with commits already in remote repository, though not connected to the main.
@@ -47,31 +46,25 @@ Bash Commands:
 git push -u origin feature/update-wk3
 ```
 
-![](attachments/update-wk-3.3png)
 
 ### Step 5: Create Pull Request
 
 Go to your repository on github, there will be a yellow notification bar with the new branch prompting you to "compare & pull request"! >Click --> Compare & pull request <--
 You will be taken to a screen where you name the pull request, and also describe it.
 
-![](attachments/update-wk3.4.png)
 
 ### Step 6: Merge pull request
 
 You are now looking at all the changes you have made to your branch that you are about to merge into the main branch, does it look good? Will it comflict with anything? The team will need yours to work or you could break the pipeline.
 
-Click -> Create pull request <-
-![](attachments/update-wk-3.5.png)
+-   Click -> Create pull request <-
 
-Click -> Confirm merge <-
-![](attachments/update-wk-3.6.png)
+-   Click -> Confirm merge <-
 
-Success!!!!
+-   Success!!!!
 
-![](attachments/update-wk-3.7.png)
 
 Confirm merge in repo ' new file alert: be a man 3.2 is in the repo 
-![](attachments/update-wk-3.8.png)
 
 ### Step 7: Clean up
 
@@ -93,7 +86,6 @@ Bash Commands:
 # switch back to main branch
 git checkout main
 ```
-![](attachments/update-wk-3.9.png)
 
 ### Step 2: Synchronize Local Branch (Main)
 
@@ -105,7 +97,6 @@ Bash Commands:
 git pull origin main
 ```
 
-![](attachments/update-wk-3-1.png)
 
 ### Step 3: Delete the Local Feature Branch
 
