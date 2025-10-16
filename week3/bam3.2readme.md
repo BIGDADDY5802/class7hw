@@ -55,11 +55,11 @@ Step 6: Merge pull request
 
 You are now looking at all the changes you have made to your branch that you are about to merge into the main branch, does it look good? Will it comflict with anything? The team will need yours to work or you could break the pipeline.
 
--   Click -> Create pull request <-
+Click -> Create pull request <-
 
--   Click -> Confirm merge <-
+Click -> Confirm merge <-
 
--   Success!!!!
+Success!!!!
 
 
 Confirm merge in repo ' new file alert: be a man 3.2 is in the repo 
