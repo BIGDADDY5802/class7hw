@@ -1,0 +1,32 @@
+# Week 4 homework
+
+-   Reading/Videos/Practice
+    -   Book
+Bahga section 2.6
+-   Udemy
+    -   Maarek SAA: Section 27
+-   Videos
+    -   Subnet Mask - Explained
+    -   Professor Messer Network+ videos, section 1.6 and 1.7
+-   Practice
+    -   Binary Game
+-   Deep dive
+    -   Reading
+        -   <https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting>
+        -   [IP addressing & troubleshooting guide](http://penta2.ufrgs.br/trouble/ts_ip.htm)
+    -   Videos
+        -   Professor Messer Network+ playlist
+        -   [what is an IP Address? // You SUCK at Subnetting // EP 1](https://youtu.be/5WfiTHiU4x8?si=ih5UdeCyc-hEA8DV)
+        -   16. [How to Find the Number of Subnets  Valid Hosts](https://youtu.be/uyRtYUg6bnw?si=9IFsgX4GY4x5Nf0I)
+        -   [Network Ports Explained](https://youtu.be/g2fT-g9PX9o?si=R0pm_3gOEFZBA23v)
+
+
+HW - DELIVERABLES (5 pts)
+Must be in github repo link
+You must create your own Network architecture with at least 3 public Subnets and 6 private subnets. Upload your network range in a document. Network architecture must include subnet masks and the AWS region it was designed for. The network architecture should be able to be utilized for building a VPC within the console.
+Screenshot of the completed quiz at the end of the Udemy SAA section
+Screenshot of your high score on the binary game
+
+HW - BE A MAN CHALLENGE 4.1 (10 pts)
+Must be in github repo link
+Create a VPC in your preferred region (must have at least 3 availability zones). Inside your VPC, build a single Windows bastion host within a public subnet, and one Linux web server per availability zone, all  in different private subnets. Each Linux web server should also display different text and pictures. Take screenshots of the running WIndows bastion host, the three Linux servers (highlighting the three different AZs in each photo), and a screenshot of a successful SSH connection to each Linux server from within the bastion host.
