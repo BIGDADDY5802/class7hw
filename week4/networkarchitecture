@@ -1,5 +1,6 @@
 # Network architechture
 
+---
 VPC Network Architecture		Subnets	
 US-East-1	                10.190.0.0/16
 			
@@ -23,19 +24,20 @@ Private-DB		        Private 1A	10.190.101.0/24
 
 In setting up a network for your VPC you should have a valid scheme that you understand and you can explain to someone. This is a best practice when working as a networker on a team.
 
+---
 ### Link to doc:
     <https://docs.google.com/spreadsheets/d/1B6pJckKSalFT-Q0wDYN0Uq0dSD7tyDOgK-CHbXxCcxs/edit?usp=sharing>
     
 **Network Scheme**
 ![](/week4/attachments/networkscheme.png)
 
-    As you grow in networking this scheme can grow without a problem!
+As you grow in networking this scheme can grow without a problem!
 
-    Next step is binary:
-    Network -   11111111
-       Host -   00000000
+Next step is binary:
+Network -   11111111
+Host -   00000000
 
-    Understanding binary is key in networking.
+Understanding binary is key in networking.
 
 **High Score**
 ![](/week4/attachments/highscore.png)
