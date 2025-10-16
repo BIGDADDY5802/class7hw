@@ -13,7 +13,7 @@ Bash Commands:
 git checkout -b feature/update-wk1
 '''
 
-![ss](week3/attachments/update-wk-3.png)
+
 
 
 ### Step 2: Make your changes
