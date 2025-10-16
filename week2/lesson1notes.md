@@ -26,8 +26,7 @@ $ls - (arguements)
 
 $ls -l - "l" means long listing format:
     When you pass this arguement the format contains a few columns;
-    -   permissions. Here we can see what kind of permission has the object. We will work with permissions... 
-       soon 
+    -   permissions. Here we can see what kind of permission has the object. 
     -   number of hard links. By default every object has 1 hard link. What are links?
     Hard links - <https://www.bing.com/ck/a?!&&p=b6e48fba933befbfb088d56be688a7acbbcbdfbeee4f090ce1a9f956cef6b4bbJmltdHM9MTc1OTcwODgwMA&ptn=3&ver=2&hsh=4&fclid=3524d378-1685-6d0e-0d7c-c540176a6c87&psq=hard+links+linux&u=a1aHR0cHM6Ly9saW51eGhhbmRib29rLmNvbS9oYXJkLWxpbmsv>
     -   Owner. The owner of the object. It doesn't mean who created it, but who owns it at this moment.

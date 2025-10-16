@@ -1,9 +1,9 @@
 # bam3.1 
 
-**Yes I know something is wrong.**
+**Chocolatey files.**
 
 ![choco](/week3/attachments/desktopview.png) 
 
-**I found out because everything was in my onedrive SMH.**
+**Desktop directories.**
 
 ![desktop](/week3/attachments/choco_view.png)
