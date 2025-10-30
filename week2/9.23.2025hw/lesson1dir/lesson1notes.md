@@ -13,7 +13,7 @@ better understanding the colors have been added.
 
 $ls --color=auto - Does the same as <$ls --color=yes>...
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 $clear - The same you can achieve by running 
 /bin/echo -e "\x1b\x5b\x48\x1b\x5b\x32\x4a\c" , 
@@ -29,7 +29,7 @@ $ls -l - "l" means long listing format:
     -   permissions. Here we can see what kind of permission has the object. We will work with permissions... 
        soon 
     -   number of hard links. By default every object has 1 hard link. What are links?
-    Hard links - <https://www.bing.com/ck/a?!&&p=b6e48fba933befbfb088d56be688a7acbbcbdfbeee4f090ce1a9f956cef6b4bbJmltdHM9MTc1OTcwODgwMA&ptn=3&ver=2&hsh=4&fclid=3524d378-1685-6d0e-0d7c-c540176a6c87&psq=hard+links+linux&u=a1aHR0cHM6Ly9saW51eGhhbmRib29rLmNvbS9oYXJkLWxpbmsv>
+    Hard links - < https://www.bing.com/ck/a?!&&p=b6e48fba933befbfb088d56be688a7acbbcbdfbeee4f090ce1a9f956cef6b4bbJmltdHM9MTc1OTcwODgwMA&ptn=3&ver=2&hsh=4&fclid=3524d378-1685-6d0e-0d7c-c540176a6c87&psq=hard+links+linux&u=a1aHR0cHM6Ly9saW51eGhhbmRib29rLmNvbS9oYXJkLWxpbmsv >
     -   Owner. The owner of the object. It doesn't mean who created it, but who owns it at this moment.
     -   Group. Owner belongs to the group (of users). This inforation is here too. This means that our 
     'groupmates' have specific access to the file.
@@ -39,6 +39,8 @@ $ls -l - "l" means long listing format:
 file name.
 
 $ls -n - This works like ls -l, but it changes the user-friendly names to UIDs and GIDs.
+UID = user IDs
+GID = group IDs
 
 UIDs= user IDs
 GIDs= group IDs
@@ -67,7 +69,8 @@ lrwxrwxrwx 1 root      root           1 Sep 19 18:23 filesystem -> /
 drwxr-xr-x 2 root      root        4096 Oct  7 02:15 testDir
 drwxr-xr-x 3 root      root        4096 Oct  7 02:15 testdir
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 list all files
 
@@ -88,7 +91,7 @@ Combining multiple arguements:
     <https://www.bing.com/ck/a?!&&p=949b40131f02418df9ca64e9105c37333bb928ae18f7a1361085525d8c87f3cfJmltdHM9MTc1OTcwODgwMA&ptn=3&ver=2&hsh=4&fclid=3524d378-1685-6d0e-0d7c-c540176a6c87&psq=drwx------++6+root++++++root++++++++4096+Oct++7+02%3a15+.&u=a1aHR0cHM6Ly91bml4LnN0YWNrZXhjaGFuZ2UuY29tL3F1ZXN0aW9ucy8xOTU3MzIvdW5kZXJzdGFuZGluZy1ob21lLWZvbGRlci1wZXJtaXNzaW9u>
 
 Sorting:
-   atime - the last time when file was accessed
+    atime - the last time when file was accessed
 
     mtime - last modification time. By modification we mean change in the file content.
 
@@ -113,29 +116,39 @@ $ls -ltc
 
 chmod 444 (changes permissions)
 
-$ls -s , $ls -ls , ls -lS , ls -lh , ls -l --si , ls -lSh
-$ls -1 , ls --format=commas , ls -m , ls -lQ , ls -l
-ls -l --time-style=locale
-ls -l --time-style=iso
-ls -l --time-style=full-iso
+![](/week2/9.23.2025hw/lesson1dir/lesson1-4.png)
+
+    ls -s , 
+    ls -ls , 
+    ls -lS , 
+    ls -lh , 
+    ls -l --si , 
+    ls -lSh
+    ls -1 , ls --format=commas , ls -m , ls -lQ , ls -l
+    ls -l --time-style=locale
+    ls -l --time-style=iso
+    ls -l --time-style=full-iso
 
 To finalize some usefull arguments, please take a look on these:
 
-ls -al --author prints the username of the creator of the file.
+    ls -al --author # prints the username of the creator of the file.
 
-ls -ald prints directories only. Very useful in some circumstances.
+    ls -ald # prints directories only. Very useful in some circumstances.
 
-ls -ali prints inodes 
+    ls -ali # prints inodes 
 
-ls -alR recursively prints all subdirectories.
+    ls -alR # recursively prints all subdirectories.
 
-ls -alr prints list in the reversed order. So,
+    ls -alr # prints list in the reversed order. So,
 
-ls -alSr is printing... 
+    ls -alSr # is printing entries in alphabetical order 
 
 
-ls --version prints the version of the binary.
+    ls --version #prints the version of the binary.
 
 All commands which we used here are available in help. How to get the help?
 
 ls --help
+
+Test:
+![](/week2/9.23.2025hw/lesson1dir/lesson-1-test.png)
