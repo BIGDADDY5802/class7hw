@@ -1,0 +1,24 @@
+# Inititializing and applying a terraform configuration
+
+1) First thing you do is create a directory for your terraform files.
+    -   <tffiles1>
+    Good practice to date your directory or give it a number so you can search 
+    for them and find them easily. Also crete a main.tf file in your terraform folder.
+
+2) Go to this github repo and copy these files raw, modify the files so that they fit your configuration
+
+3) After modifying the files for you we then put the command:
+        $terraform init
+    This commamd initialises terraform into AWS for you
+
+        $terraform validate
+    This command checks the syntax of your code. Makes sure you have everything right,
+    this is only validating syntax.
+
+        $terraform plan
+    This command is the one before the work gets done, it lays the plan that it is gonna
+    execute and shows you the plan in the terminal for you to review
+
+        $terraform apply
+    This command launches and sends your commands to AWS for you, in a couple minutes at
+    most you have built infrastructure in AWS.
