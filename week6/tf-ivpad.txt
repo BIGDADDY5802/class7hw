@@ -6,6 +6,7 @@
     for them and find them easily. Also crete a main.tf file in your terraform folder.
 
 2) Go to this github repo and copy these files raw, modify the files so that they fit your configuration
+        <https://github.com/BIGDADDY5802/class7hw/blob/main/week6/week6tf/main.tf>
 
 3) After modifying the files for you we then put the command:
         $terraform init
