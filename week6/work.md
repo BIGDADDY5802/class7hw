@@ -65,3 +65,7 @@ This configuration promotes well-organized and maintainable Terraform projects t
 ### Terraform apply
 
 ![](/week6/attachments/terraform-applied.png)
+
+### gitignore
+
+![](/week6/attachments/gitignore.png)
