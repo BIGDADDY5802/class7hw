@@ -8,7 +8,7 @@ resource "aws_launch_template" "main_LT" {
 network_interfaces {
     #device_index         = 0
     subnet_id            = aws_subnet.public-us-east-1a.id
-    security_groups      = [aws_security_group.allow_alb_http.id]
+    security_groups      = [aws_security_group.allow_ssh.id, aws_security_group.ping.id]
     associate_public_ip_address = true
   }
 
