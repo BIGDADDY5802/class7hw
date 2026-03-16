@@ -23,7 +23,8 @@ resource "aws_vpc_security_group_ingress_rule" "bastion_ssh" {
   ip_protocol       = "tcp"
   cidr_ipv4         = "0.0.0.0/0"
 
-  tags = { Name = "bastion-ssh-22"
+  tags = { 
+    Name = "bastion-ssh-22"
     environment = "dev"
     owner       = "thedawgs"
   }
@@ -35,7 +36,8 @@ resource "aws_vpc_security_group_egress_rule" "bastion_egress" {
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
 
-  tags = { Name = "bastion-egress-all"
+  tags = { 
+    Name = "bastion-egress-all"
     environment = "dev"
     owner       = "thedawgs"
   }
@@ -62,7 +64,8 @@ resource "aws_vpc_security_group_ingress_rule" "jenkins_ssh_from_bastion" {
   ip_protocol                  = "tcp"
   referenced_security_group_id = aws_security_group.bastion_sg.id # SG reference, not CIDR
 
-  tags = { Name = "jenkins-ssh-from-bastion"
+  tags = { 
+    Name = "jenkins-ssh-from-bastion"
     environment = "dev"
     owner       = "thedawgs"
   }
@@ -76,7 +79,8 @@ resource "aws_vpc_security_group_ingress_rule" "jenkins_ui" {
   ip_protocol       = "tcp"
   cidr_ipv4         = aws_vpc.jenkins_vpc.cidr_block
 
-  tags = { Name = "jenkins-ui-8080"
+  tags = { 
+    Name = "jenkins-ui-8080"
     environment = "dev"
     owner       = "thedawgs"
   }
@@ -88,7 +92,8 @@ resource "aws_vpc_security_group_egress_rule" "jenkins_egress" {
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
 
-  tags = { Name = "jenkins-egress-all"
+  tags = { 
+    Name = "jenkins-egress-all"
     environment = "dev"
     owner       = "thedawgs"
   }
