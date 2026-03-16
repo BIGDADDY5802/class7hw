@@ -7,8 +7,8 @@ resource "aws_vpc" "jenkins_vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "jenkins-vpc"
+    Name        = "jenkins-vpc"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }

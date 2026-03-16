@@ -9,7 +9,7 @@ resource "aws_lb" "main_alb" {
     aws_subnet.public-us-east-1c.id
   ]
   enable_deletion_protection = false
-  
+
   #Lots of death and suffering here, make sure it's false
 
   tags = {
@@ -27,9 +27,9 @@ resource "aws_lb_listener" "http" {
 
   default_action {
     type             = "forward"
-     target_group_arn = aws_lb_target_group.main_tg.arn
-  
-    
+    target_group_arn = aws_lb_target_group.main_tg.arn
+
+
   }
 }
 

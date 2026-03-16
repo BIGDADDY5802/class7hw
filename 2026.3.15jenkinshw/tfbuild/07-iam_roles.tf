@@ -14,9 +14,9 @@ resource "aws_iam_role" "jenkins_role" {
   })
 
   tags = {
-    Name = "jenkins-instance-role"
+    Name        = "jenkins-instance-role"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 

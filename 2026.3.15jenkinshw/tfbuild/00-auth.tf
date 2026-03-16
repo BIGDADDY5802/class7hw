@@ -1,11 +1,11 @@
 # Terraform configuration block
 # This defines the minimum Terraform version and required providers
 terraform {
-   backend "s3" {
-     bucket = "11-9-backend"
-     key   = "tfbuild2/terraform.tfstate"
-     region = "us-east-1"
-}
+  backend "s3" {
+    bucket = "11-9-backend"
+    key    = "tfbuild2/terraform.tfstate"
+    region = "us-east-1"
+  }
 
   required_version = ">= 1.0"
 

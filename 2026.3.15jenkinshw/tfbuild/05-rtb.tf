@@ -12,9 +12,9 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "jenkins-public-rt"
+    Name        = "jenkins-public-rt"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 
@@ -33,9 +33,9 @@ resource "aws_route_table" "private" {
   }
 
   tags = {
-    Name = "jenkins-private-rt"
+    Name        = "jenkins-private-rt"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 

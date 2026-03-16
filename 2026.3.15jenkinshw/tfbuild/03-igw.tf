@@ -5,8 +5,8 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.jenkins_vpc.id
 
   tags = {
-    Name = "jenkins-igw"
+    Name        = "jenkins-igw"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }

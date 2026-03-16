@@ -9,9 +9,9 @@ resource "aws_security_group" "bastion_sg" {
   vpc_id      = aws_vpc.jenkins_vpc.id
 
   tags = {
-    Name = "jenkins-bastion-sg"
+    Name        = "jenkins-bastion-sg"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 
@@ -23,7 +23,10 @@ resource "aws_vpc_security_group_ingress_rule" "bastion_ssh" {
   ip_protocol       = "tcp"
   cidr_ipv4         = "0.0.0.0/0"
 
-  tags = { Name = "bastion-ssh-22" }
+  tags = { Name = "bastion-ssh-22"
+    environment = "dev"
+    owner       = "thedawgs"
+  }
 }
 
 resource "aws_vpc_security_group_egress_rule" "bastion_egress" {
@@ -32,10 +35,10 @@ resource "aws_vpc_security_group_egress_rule" "bastion_egress" {
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
 
-  tags = { Name = "bastion-egress-all" 
-  environment = "dev"
-    owner = "thedawgs"
-    }
+  tags = { Name = "bastion-egress-all"
+    environment = "dev"
+    owner       = "thedawgs"
+  }
 }
 
 # Jenkins — accepts SSH only from bastion, and port 8080 from within the VPC
@@ -45,9 +48,9 @@ resource "aws_security_group" "jenkins_sg" {
   vpc_id      = aws_vpc.jenkins_vpc.id
 
   tags = {
-    Name = "jenkins-server-sg"
+    Name        = "jenkins-server-sg"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 
@@ -57,12 +60,12 @@ resource "aws_vpc_security_group_ingress_rule" "jenkins_ssh_from_bastion" {
   from_port                    = 22
   to_port                      = 22
   ip_protocol                  = "tcp"
-  referenced_security_group_id = aws_security_group.bastion_sg.id   # SG reference, not CIDR
+  referenced_security_group_id = aws_security_group.bastion_sg.id # SG reference, not CIDR
 
   tags = { Name = "jenkins-ssh-from-bastion"
-  environment = "dev"
-    owner = "thedawgs"
-     }
+    environment = "dev"
+    owner       = "thedawgs"
+  }
 }
 
 resource "aws_vpc_security_group_ingress_rule" "jenkins_ui" {
@@ -74,9 +77,9 @@ resource "aws_vpc_security_group_ingress_rule" "jenkins_ui" {
   cidr_ipv4         = aws_vpc.jenkins_vpc.cidr_block
 
   tags = { Name = "jenkins-ui-8080"
-  environment = "dev"
-    owner = "thedawgs" 
-    }
+    environment = "dev"
+    owner       = "thedawgs"
+  }
 }
 
 resource "aws_vpc_security_group_egress_rule" "jenkins_egress" {
@@ -86,7 +89,7 @@ resource "aws_vpc_security_group_egress_rule" "jenkins_egress" {
   cidr_ipv4         = "0.0.0.0/0"
 
   tags = { Name = "jenkins-egress-all"
-  environment = "dev"
-    owner = "thedawgs" 
-    }
+    environment = "dev"
+    owner       = "thedawgs"
+  }
 }

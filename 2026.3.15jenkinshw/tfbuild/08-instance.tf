@@ -16,9 +16,9 @@ resource "aws_instance" "bastion" {
   }
 
   tags = {
-    Name = "jenkins-bastion"
+    Name        = "jenkins-bastion"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
 
@@ -31,7 +31,7 @@ resource "aws_instance" "jenkins" {
   subnet_id     = aws_subnet.private.id
   key_name      = "jenkins_lab"
 
-  associate_public_ip_address = false   # private subnet — no direct internet exposure
+  associate_public_ip_address = false # private subnet — no direct internet exposure
   vpc_security_group_ids      = [aws_security_group.jenkins_sg.id]
   iam_instance_profile        = aws_iam_instance_profile.jenkins_profile.name
 
@@ -51,8 +51,8 @@ resource "aws_instance" "jenkins" {
   }
 
   tags = {
-    Name = "jenkins_server"
+    Name        = "jenkins_server"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }

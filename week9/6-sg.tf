@@ -11,9 +11,9 @@ resource "aws_security_group" "allow_http" {
 resource "aws_vpc_security_group_ingress_rule" "ingress_80" {
   security_group_id = aws_security_group.allow_alb_http.id
   #type              = "ingress"
-  from_port   = 80
-  to_port     = 80
-  ip_protocol = "tcp"
+  from_port                    = 80
+  to_port                      = 80
+  ip_protocol                  = "tcp"
   referenced_security_group_id = aws_security_group.allow_alb_http.id
 }
 

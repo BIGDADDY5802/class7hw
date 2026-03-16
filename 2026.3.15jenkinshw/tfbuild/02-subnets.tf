@@ -8,9 +8,9 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "jenkins-public-subnet"
+    Name        = "jenkins-public-subnet"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
 
   }
 }
@@ -21,9 +21,9 @@ resource "aws_subnet" "private" {
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "jenkins-private-subnet"
+    Name        = "jenkins-private-subnet"
     environment = "dev"
-    owner = "thedawgs"
+    owner       = "thedawgs"
   }
 }
-  
+
